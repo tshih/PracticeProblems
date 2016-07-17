@@ -32,4 +32,9 @@ public class P5OneAwayTest {
         assertTrue(testObj.oneAway("true", "brue"));
     }
 
+    @Test
+    public void testFail() {
+        assertFalse(testObj.oneAway("true", "false"));
+    }
+
 }
