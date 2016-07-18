@@ -1,38 +1,24 @@
 package chapter2;
 
-public class Node {
+public class Node<T> {
 	private Node next;
 	private Node prev;
-	private int data;
+	private T data;
 
 	public Node() {
 
 	}
 	
-	public Node(int data) {
+	public Node(T data) {
 		this.data = data;
 	}
 
-	public Node(int data, Node next) {
+	public Node(T data, Node next) {
 		this.data = data;
 	}
 
-	public Node(int data, Node next, Node prev) {
+	public Node(T data, Node next, Node prev) {
 		this.data = data;
-	}
-
-	public static Node createLinkedList(int[] data) {
-
-		Node prev = new Node(data[0]);
-		Node first = prev;
-
-		for(int i = 1; i < data.length ; i++) {
-			Node next = new Node(data[i], null, prev);
-			prev.setNext(next);
-			prev = next;
-		}
-
-		return first;
 	}
 
 	public int getSize() {
@@ -53,11 +39,11 @@ public class Node {
 		this.next = next;
 	}
 
-	public int getData() {
+	public T getData() {
 		return data;
 	}
 
-	public void setData(int data) {
+	public void setData(T data) {
 		this.data = data;
 	}
 	
