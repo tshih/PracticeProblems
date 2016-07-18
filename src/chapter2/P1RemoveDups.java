@@ -6,6 +6,10 @@ import java.util.Set;
 public class P1RemoveDups {
 
 	public void removeDups(Node n) {
+
+		if(n == null)
+			return;
+
 		Set<Integer> set = new HashSet<Integer>();
 		
 		Node n1 = n;
