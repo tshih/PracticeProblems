@@ -12,8 +12,8 @@ public class P1RemoveDups {
 
 		Set<Integer> set = new HashSet<Integer>();
 		
-		Node n1 = n;
-		Node n2 = n.getNext();
+		Node<Integer> n1 = n;
+		Node<Integer> n2 = n.getNext();
 		
 		set.add(n1.getData());
 		

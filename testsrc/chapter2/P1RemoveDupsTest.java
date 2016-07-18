@@ -30,8 +30,8 @@ public class P1RemoveDupsTest {
         Set<Integer> dataset = new HashSet<Integer>();
         Collections.addAll(dataset, data);
 
-        Node prev = new Node(data[0]);
-        Node first = prev;
+        Node<Integer> prev = new Node(data[0]);
+        Node<Integer> first = prev;
 
         for(int i = 1; i < data.length ; i++) {
             Node next = new Node(data[i], null, prev);
