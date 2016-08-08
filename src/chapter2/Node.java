@@ -15,6 +15,7 @@ public class Node<T> {
 
 	public Node(T data, Node next) {
 		this.data = data;
+		this.next = next;
 	}
 
 	public Node(T data, Node next, Node prev) {

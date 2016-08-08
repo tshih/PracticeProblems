@@ -1,5 +1,8 @@
 package chapter2;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Timothy Shih on 7/17/2016.
  */
@@ -17,5 +20,15 @@ public class NodeUtils {
         }
 
         return first;
+    }
+
+    public static <T> void printLinkedList(Node<T> node) {
+        List<T> values = new ArrayList<T>();
+        while(node != null) {
+            values.add(node.getData());
+            node = node.getNext();
+        }
+
+        System.out.println(values);
     }
 }
